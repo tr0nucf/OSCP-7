@@ -12,7 +12,7 @@ if len(sys.argv) != 2:
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 # Connect to the Server
-connect = s.connect(('192.168.11.215', 25))
+connect = s.connect(('192.168.0.11', 25))
 
 # Receive the banner
 banner = s.recv(1024)
