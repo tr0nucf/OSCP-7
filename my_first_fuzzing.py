@@ -7,7 +7,7 @@ buf = 'A'
 count = 100
 
 while True:
-    print('Fuzzing PASS with %s bytes' % len(buf))          #Print bytes sent
+    print('Fuzzing PASS with %s bytes' % len(buf))          # Print bytes sent
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)   # Create socket
     s.connect(('10.0.1.104', 110))                          # connect host, port 110
     data = s.recv(1024)                                     # receive
