@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 #by Anakein
-import struct, time, sys
+import struct, sys
 import socket as so 
 
 try:
