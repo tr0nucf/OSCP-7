@@ -18,7 +18,7 @@ echo -e "\e[96m# Enter 2 to check Applications & Services               #"
 echo -e "\e[96m# Enter 3 to check Communications & Networking           #"
 echo -e "\e[96m# Enter q to exit the menu q:                            #"
 echo -e	"\e[96m#   \n                                                   #"
-echo -e	"\e[96m# Enter your selection \c                                #"
+echo -e	"\e[96m# Enter your selection:  \c                                #"
 read answer
 case "$answer" in
     1)  echo " Operating System"
@@ -170,6 +170,7 @@ case "$answer" in
         echo -e "\e[96m#                         \e[93mCommunications & Networking                                   #"
         echo -e	"\e[96m#---------------------------------------------------------------------------------------#" ;;
 
-    4)  exit ;;
+    4)  echo "Exit ....."
+	exit ;;
     esac
 done
