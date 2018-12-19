@@ -18,7 +18,7 @@ echo -e "\e[96m# Enter 2 to check Applications & Services               #"
 echo -e "\e[96m# Enter 3 to check Communications & Networking           #"
 echo -e "\e[96m# Enter 4 to check Confidential Information & Users      #"
 echo -e "\e[96m# Enter 6 to check File Systems                          #"
-echo -e "\e[96m# Enter 7 Preparation & Finding Exploit Code             #"
+echo -e "\e[96m# Enter 7 to Preparation & Finding Exploit Code          #"
 echo -e "\e[96m# Enter 8 to exit the menu                               #"
 echo -e	"\e[96m# Enter your selection:  \c                              #"
 read answer
