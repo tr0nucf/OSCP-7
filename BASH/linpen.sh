@@ -16,7 +16,7 @@ echo -e	"\e[96m#                                                        #"
 echo -e	"\e[96m# Enter 1 to check Operating System                      #"
 echo -e "\e[96m# Enter 2 to check Applications & Services               #"
 echo -e "\e[96m# Enter 3 to check Communications & Networking           #"
-echo -e "\e[96m# Enter q to exit the menu q:                            #"
+echo -e "\e[96m# Enter 4 to exit the menu                               #"
 echo -e	"\e[96m#   \n                                                   #"
 echo -e	"\e[96m# Enter your selection:  \c                                #"
 read answer
@@ -166,9 +166,72 @@ case "$answer" in
         echo	"								"
         find . -name "*.php" -print0 | xargs -0 grep -i -n "var $password"   # Joomla
         echo	"								" ;;
-    3)  echo -e	"\e[96m#---------------------------------------------------------------------------------------#"
-        echo -e "\e[96m#                         \e[93mCommunications & Networking                                   #"
-        echo -e	"\e[96m#---------------------------------------------------------------------------------------#" ;;
+    3)  echo -e "\e[96m#                 Communications & Networking                       #"
+        echo -e	"\e[96m#--------------------------------------------------------#"
+        echo -e "\e[96m#   \e[93mWhat NIC(s) does the system have? Is it connected to another network?          \e[96m#"
+        echo -e	"\e[96m#--------------------------------------------------------#"
+        echo	"								"
+        /sbin/ifconfig -a
+        echo	"								"
+        cat /etc/network/interfaces
+        echo	"								"
+        cat /etc/sysconfig/network
+        echo	"								"
+        echo -e	"\e[96m#--------------------------------------------------------#"
+        echo -e "\e[96m#   \e[93mWhat are the network configuration settings? \e[96m#"
+        echo -e "\e[96m#   \e[93mWhat can you find out about this network?  \e[96m#"
+        echo -e "\e[96m#   \e[93mDHCP server? DNS server? Gateway?          \e[96m#"
+        echo -e	"\e[96m#--------------------------------------------------------#"
+        echo	"								"
+        cat /etc/resolv.conf
+        echo	"								"
+        cat /etc/sysconfig/network
+        echo	"								"
+        cat /etc/networks
+        echo	"								"
+        iptables -L
+        echo	"								"
+        hostname
+        echo	"								"
+        dnsdomainname
+        echo	"								"
+        echo -e	"\e[96m#--------------------------------------------------------#"
+        echo -e "\e[96m#   \e[93mWhat other users & hosts are communicating with the system?        \e[96m#"
+        echo -e	"\e[96m#--------------------------------------------------------#"
+        echo	"								"
+        lsof -i
+        echo	"								"
+        lsof -i :80
+        echo	"								"
+        grep 80 /etc/services
+        echo	"								"
+        netstat -antup
+        echo	"								"
+        netstat -antpx
+        echo	"								"
+        netstat -tulpn
+        echo	"								"
+        chkconfig --list
+        echo	"								"
+        chkconfig --list | grep 3:on
+        echo	"								"
+        last
+        echo	"								"
+        w
+        echo	"								"
+        echo -e	"\e[96m#--------------------------------------------------------#"
+        echo -e "\e[96m#   \e[93mWhats cached? IP and/or MAC addresses        \e[96m#"
+        echo -e	"\e[96m#--------------------------------------------------------#"   
+        echo	"								"
+        arp -e
+        echo	"								"
+        route
+        echo	"								"
+        /sbin/route -nee
+        echo	"								" ;;
+	
+
+
 
     4)  echo "Exit ....."
 	exit ;;
