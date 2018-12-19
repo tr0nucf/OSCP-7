@@ -21,7 +21,7 @@ echo -e	"\e[96m#   \n                                                   #"
 echo -e	"\e[96m# Enter your selection \c                                #"
 read answer
 case "$answer" in
-1)      echo " Operating System"
+    1)  echo " Operating System"
         echo 	"  							        "
         echo -e "\e[96m#                 Operating System                       #"
         echo -e	"\e[96m#--------------------------------------------------------#"
@@ -63,7 +63,7 @@ case "$answer" in
         echo	"								" 
         lpstat -a 
         echo	"								"  ;;
-2)      echo -e	"\e[96m#---------------------------------------------------------------------------------------#"
+    2)  echo -e	"\e[96m#---------------------------------------------------------------------------------------#"
         echo -e "\e[96m#                         Applications & Services                                       #"
         echo -e "\e[96m#   \e[93mWhat services are running? Which service has which user privilege?                  \e[96m#"
         echo -e	"\e[96m#---------------------------------------------------------------------------------------#"
@@ -173,8 +173,3 @@ case "$answer" in
     4)  exit ;;
     esac
 done
-
-
-
-
-
