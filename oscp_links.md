@@ -1,7 +1,3 @@
-# 24x7x365 SUPPORT http://www.captiongenerator.com/320492/Offsec-Student-Admins
-
-## https://natesubra.com/go/oscp
-
 ## OSCP Syllabus:
 https://www.offensive-security.com/information-security-training/penetration-testing-training-kali-linux/
 
