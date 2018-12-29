@@ -5,7 +5,7 @@
 # Date          = 12/28/2018                                                                  #
 # Reference     = https://www.exploit-db.com/exploits/26471/                                  #
 # Author        = @Anakein                                                                    #
-# Tested on     = Windows 7 Ultimate SP1                                                      #
+# Tested on     = Windows XP SP3                                                              #
 # EIP Offset    = 2004                                                                        #
 # Badchars      = "\x00\x0A\x0D"                                                              #
 # RET Address   = 0x7cb32d69 : "\xFF\xE4" | [SHELL32.dll]                                     #
