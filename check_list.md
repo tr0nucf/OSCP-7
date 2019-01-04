@@ -20,7 +20,7 @@ https://www.exploit-db.com/apps/707414955696c57b71c7f160c720bed5-EasyRMtoMP3Conv
 ## Free CD to MP3 Converter 3.1 - Buffer Overflow 
 https://www.exploit-db.com/apps/b8d87f65406d8524d79742359b81dd4c-cdtomp3freeware.exe
 
-## MiniShare Version 1.4.1   
+## MiniShare Version 1.4.1   (OK)
 https://www.exploit-db.com/apps/0ffe5385147edd1f9e7b460c6d7cb0a6-minishare-1.4.1.zip
 
 
