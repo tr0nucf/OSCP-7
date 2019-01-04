@@ -10,3 +10,6 @@
 
 ### repeat again
 
+reference:
+https://netsec365.wordpress.com/2016/08/25/finding-bad-characters-with-mona-py/
+https://bulbsecurity.com/finding-bad-characters-with-immunity-debugger-and-mona-py/
